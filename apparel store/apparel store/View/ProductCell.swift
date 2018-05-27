@@ -18,6 +18,12 @@ class ProductCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func update(product: ProductData){
+        productImage.image = UIImage(named: product.imageName)
+        productTitle.text = product.title
+        ProductPrice.text = product.price
+    }
 
    
 
